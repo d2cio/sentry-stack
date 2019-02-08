@@ -109,5 +109,5 @@ services:
 hosts:
   - name: sentry
     requirements:
-      cores: 2
-      memory: 4
+      cores: 1
+      memory: 3.5
