@@ -2,7 +2,7 @@ version: '1.0'
 services:
   - name: redis
     type: redis
-    version: 4.0
+    version: 5.0
     remoteAccess: false
     ports:
       - 6379
@@ -11,7 +11,7 @@ services:
 
   - name: db
     type: postgres
-    version: 10.4
+    version: 11.1
     configuration: StandAlone
     ports:
       - 5432
@@ -25,7 +25,7 @@ services:
   - name: sentry-web
     type: docker
     image: sentry
-    version: 8
+    version: 9
     ports:
       - 9000
     remoteAccess: false
@@ -57,7 +57,7 @@ services:
   - name: sentry-cron
     type: docker
     image: sentry
-    version: 8
+    version: 9
     ports:
       - 9000
     remoteAccess: false
@@ -77,7 +77,7 @@ services:
   - name: sentry-worker
     type: docker
     image: sentry
-    version: 8
+    version: 9
     ports:
       - 9000
     remoteAccess: false
@@ -96,7 +96,7 @@ services:
 
   - name: web
     type: nginx
-    version: 1.14
+    version: 1.15
     ports:
       - 80
       - 443
